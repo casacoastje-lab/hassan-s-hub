@@ -30,6 +30,11 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.newsletter.disclaimer': 'No spam. Unsubscribe anytime.',
     'hero.newsletter.success': 'Thanks for subscribing!',
     'hero.newsletter.error': 'Please enter a valid email.',
+    'contact.name.placeholder': 'Full name',
+    'contact.phone.placeholder': 'Phone number (optional)',
+    'contact.success': 'Thank you! Your info has been submitted.',
+    'contact.error.name': 'Please enter your full name.',
+    'contact.error.general': 'Something went wrong. Please try again.',
 
     // About
     'about.title': 'About Me',
@@ -103,6 +108,11 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.newsletter.disclaimer': 'Pas de spam. Désabonnement à tout moment.',
     'hero.newsletter.success': 'Merci pour votre abonnement !',
     'hero.newsletter.error': 'Veuillez entrer un email valide.',
+    'contact.name.placeholder': 'Nom complet',
+    'contact.phone.placeholder': 'Numéro de téléphone (optionnel)',
+    'contact.success': 'Merci ! Vos informations ont été envoyées.',
+    'contact.error.name': 'Veuillez entrer votre nom complet.',
+    'contact.error.general': 'Une erreur est survenue. Veuillez réessayer.',
 
     'about.title': 'À Propos',
     'about.text': 'Je suis Hassan Oubihi, étudiant en troisième année de génie logiciel à l\'Université China West Normal. Avec une solide base en développement web full-stack et une passion pour le code propre et évolutif, je construis des solutions concrètes depuis 2021. En tant que fondateur du club de génie logiciel de mon université, j\'allie expertise technique et leadership pour stimuler l\'innovation et la collaboration. Je recherche activement des opportunités de stage en Chine ou en France.',
@@ -169,6 +179,11 @@ const translations: Record<Language, Record<string, string>> = {
     'hero.newsletter.disclaimer': 'بدون رسائل مزعجة. يمكنك إلغاء الاشتراك في أي وقت.',
     'hero.newsletter.success': 'شكراً لاشتراكك!',
     'hero.newsletter.error': 'يرجى إدخال بريد إلكتروني صالح.',
+    'contact.name.placeholder': 'الاسم الكامل',
+    'contact.phone.placeholder': 'رقم الهاتف (اختياري)',
+    'contact.success': 'شكراً! تم إرسال معلوماتك.',
+    'contact.error.name': 'يرجى إدخال اسمك الكامل.',
+    'contact.error.general': 'حدث خطأ. يرجى المحاولة مرة أخرى.',
 
     'about.title': 'عني',
     'about.text': 'أنا حسن أوبيحي، طالب في السنة الثالثة في هندسة البرمجيات بجامعة غرب الصين. مع أساس قوي في تطوير الويب الكامل وشغف بالكود النظيف والقابل للتطوير، أبني حلولاً حقيقية منذ 2021. كمؤسس لنادي هندسة البرمجيات في جامعتي، أجمع بين الخبرة التقنية والقيادة لدفع الابتكار والتعاون. أبحث حالياً عن فرص تدريب في الصين أو فرنسا.',
