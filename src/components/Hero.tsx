@@ -18,7 +18,7 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className="shrink-0"
           >
-            <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-2 border-border shadow-lg">
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-border shadow-lg">
               <img
                 src={hassanPhoto}
                 alt="Hassan Oubihi"
@@ -69,7 +69,10 @@ const Hero = () => {
                 {t('hero.cta.contact')}
               </a>
               <a
-                href="#"
+                href="/hassan_oubihi_cv.pdf"
+                download="Hassan_Oubihi_CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 border border-border rounded-lg font-medium text-sm text-foreground hover:bg-accent transition-colors inline-flex items-center gap-2"
               >
                 <Download className="w-4 h-4" />
