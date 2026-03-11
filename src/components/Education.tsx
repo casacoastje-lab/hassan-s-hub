@@ -1,12 +1,11 @@
 import { useI18n } from '@/lib/i18n';
 import { motion } from 'framer-motion';
-import { GraduationCap } from 'lucide-react';
 
 const fadeIn = {
-  initial: { opacity: 0, y: 20 },
+  initial: { opacity: 0, y: 32 },
   whileInView: { opacity: 1, y: 0 },
   viewport: { once: true, margin: '-50px' },
-  transition: { duration: 0.5 },
+  transition: { duration: 0.7 },
 };
 
 const Education = () => {
@@ -22,6 +21,7 @@ const Education = () => {
     {
       degreeKey: 'education.cjlu.degree',
       schoolKey: 'education.cjlu.school',
+      dateKey: '',
       detailKey: 'education.cjlu.detail',
     },
   ];
@@ -29,28 +29,28 @@ const Education = () => {
   return (
     <section id="education" className="section-padding">
       <div className="container-tight">
-        <motion.h2 {...fadeIn} className="text-2xl md:text-3xl font-bold mb-6">
+        <motion.div {...fadeIn} className="flex items-center gap-4 mb-4">
+          <span className="text-primary text-[0.7rem] tracking-[0.25em] uppercase">04 — {t('nav.education')}</span>
+          <span className="flex-1 max-w-[80px] h-px bg-primary/40" />
+        </motion.div>
+        <motion.h2 {...fadeIn} className="text-[clamp(2rem,5vw,3.2rem)] font-extrabold leading-tight mb-12">
           {t('education.title')}
         </motion.h2>
-        <motion.div {...fadeIn} transition={{ delay: 0.1 }} className="h-1 w-12 bg-foreground rounded mb-10" />
 
-        <div className="space-y-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {schools.map((s, i) => (
             <motion.div
               key={i}
               {...fadeIn}
               transition={{ delay: 0.1 * (i + 1) }}
-              className="flex gap-4 items-start"
+              className="bg-card border border-primary/[0.12] rounded-lg p-8 transition-all hover:border-primary hover:-translate-y-1"
             >
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
-                <GraduationCap className="w-5 h-5 text-primary-foreground" />
-              </div>
-              <div>
-                <h3 className="font-semibold">{t(s.degreeKey)}</h3>
-                <p className="text-sm text-muted-foreground">{t(s.schoolKey)}</p>
-                {s.dateKey && <p className="text-xs text-muted-foreground mt-0.5">{t(s.dateKey)}</p>}
-                <p className="text-sm text-muted-foreground mt-1">{t(s.detailKey)}</p>
-              </div>
+              <h3 className="font-bold text-base mb-1.5" style={{ fontFamily: 'var(--font-heading)' }}>
+                {t(s.degreeKey)}
+              </h3>
+              <p className="text-primary text-[0.78rem] mb-1">{t(s.schoolKey)}</p>
+              {s.dateKey && <p className="text-muted-foreground text-[0.72rem] mb-4">{t(s.dateKey)}</p>}
+              <p className="text-muted-foreground text-[0.8rem] leading-relaxed">{t(s.detailKey)}</p>
             </motion.div>
           ))}
         </div>

@@ -49,13 +49,15 @@ const NewsletterForm = ({ variant = 'default' }: { variant?: 'default' | 'hero' 
 
   const isHero = variant === 'hero';
 
+  const inputClass = "w-full ps-9 pe-4 py-2.5 text-sm bg-secondary border border-primary/[0.12] rounded-md focus:outline-none focus:border-primary focus:shadow-[0_0_12px_hsl(187_100%_50%/0.15)] placeholder:text-muted-foreground text-foreground transition-all";
+
   return (
     <div className={isHero ? '' : 'w-full max-w-md mx-auto'}>
       {status === 'success' ? (
         <motion.p
           initial={{ opacity: 0, y: 4 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-sm text-foreground font-medium text-center"
+          className="text-sm text-primary font-medium text-center"
         >
           ✓ {t('contact.success')}
         </motion.p>
@@ -68,7 +70,7 @@ const NewsletterForm = ({ variant = 'default' }: { variant?: 'default' | 'hero' 
               value={fullName}
               onChange={(e) => { setFullName(e.target.value); setStatus('idle'); }}
               placeholder={t('contact.name.placeholder')}
-              className="w-full ps-9 pe-4 py-2.5 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-ring placeholder:text-muted-foreground"
+              className={inputClass}
               maxLength={100}
             />
           </div>
@@ -79,7 +81,7 @@ const NewsletterForm = ({ variant = 'default' }: { variant?: 'default' | 'hero' 
               value={email}
               onChange={(e) => { setEmail(e.target.value); setStatus('idle'); }}
               placeholder={t(isHero ? 'hero.newsletter.placeholder' : 'newsletter.placeholder')}
-              className="w-full ps-9 pe-4 py-2.5 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-ring placeholder:text-muted-foreground"
+              className={inputClass}
               maxLength={255}
             />
           </div>
@@ -90,14 +92,14 @@ const NewsletterForm = ({ variant = 'default' }: { variant?: 'default' | 'hero' 
               value={phone}
               onChange={(e) => { setPhone(e.target.value); setStatus('idle'); }}
               placeholder={t('contact.phone.placeholder')}
-              className="w-full ps-9 pe-4 py-2.5 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-ring placeholder:text-muted-foreground"
+              className={inputClass}
               maxLength={20}
             />
           </div>
           <button
             type="submit"
             disabled={status === 'loading'}
-            className="px-5 py-2.5 text-sm font-medium bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity whitespace-nowrap disabled:opacity-50"
+            className="px-5 py-2.5 text-sm font-bold bg-primary text-primary-foreground rounded-md tracking-[0.1em] uppercase hover:bg-transparent hover:text-primary hover:shadow-[inset_0_0_0_1.5px_hsl(187_100%_50%)] transition-all whitespace-nowrap disabled:opacity-50"
           >
             {status === 'loading' ? '...' : t(isHero ? 'hero.newsletter.button' : 'newsletter.button')}
           </button>
