@@ -72,7 +72,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.7 }}
-          className="max-w-md mx-auto"
+          className="max-w-md mx-auto pb-20"
         >
           <p className="text-sm font-medium mb-4 text-foreground">{t('hero.newsletter.title')}</p>
           <NewsletterForm variant="hero" />
@@ -84,10 +84,10 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 pt-8"
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 z-10"
       >
         <span className="text-[0.65rem] tracking-[0.2em] uppercase text-muted-foreground">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-primary to-transparent" style={{ animation: 'scrollLine 2s ease infinite' }} />
+        <div className="w-px h-10 bg-gradient-to-b from-primary to-transparent" style={{ animation: 'scrollLine 2s ease infinite' }} />
       </motion.div>
     </section>
   );
