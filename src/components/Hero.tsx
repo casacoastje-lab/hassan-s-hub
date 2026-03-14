@@ -1,7 +1,6 @@
 import { useI18n } from '@/lib/i18n';
 import { motion } from 'framer-motion';
 import { Download } from 'lucide-react';
-import NewsletterForm from './NewsletterForm';
 
 const Hero = () => {
   const { t } = useI18n();
@@ -65,17 +64,6 @@ const Hero = () => {
             <Download className="w-4 h-4" />
             {t('hero.cta.resume')}
           </a>
-        </motion.div>
-
-        {/* Newsletter in hero */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.7 }}
-          className="max-w-md mx-auto pb-20"
-        >
-          <p className="text-sm font-medium mb-4 text-foreground">{t('hero.newsletter.title')}</p>
-          <NewsletterForm variant="hero" />
         </motion.div>
       </div>
 
