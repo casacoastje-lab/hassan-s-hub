@@ -10,7 +10,7 @@ const Hero = () => {
       {/* Grid background */}
       <div className="absolute inset-0 grid-bg" />
       {/* Glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[radial-gradient(circle,hsl(187_100%_50%/0.06)_0%,transparent_70%)] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-[radial-gradient(circle,hsl(187_100%_50%/0.12)_0%,transparent_70%)] pointer-events-none" />
 
       <div className="relative text-center max-w-[900px] px-6">
         {/* Tag */}
