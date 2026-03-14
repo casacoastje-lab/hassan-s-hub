@@ -72,7 +72,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.7 }}
-          className="max-w-md mx-auto"
+          className="max-w-md mx-auto pb-20"
         >
           <p className="text-sm font-medium mb-4 text-foreground">{t('hero.newsletter.title')}</p>
           <NewsletterForm variant="hero" />
