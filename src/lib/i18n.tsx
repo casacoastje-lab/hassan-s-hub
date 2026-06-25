@@ -17,6 +17,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.education': 'Education',
     'nav.skills': 'Skills',
     'nav.contact': 'Contact',
+    'nav.projects': 'Projects',
 
     // Hero
     'hero.tag': 'Available for internship · China & France',
@@ -85,6 +86,16 @@ const translations: Record<Language, Record<string, string>> = {
     'skills.tools': 'DevOps & Tools',
     'skills.mobile': 'Mobile',
 
+    // Projects
+    'projects.title': 'Selected work.',
+    'projects.view': 'View details',
+    'projects.back': 'Back to projects',
+    'projects.code': 'View code',
+    'projects.live': 'Live demo',
+    'projects.overview': 'Overview',
+    'projects.features': 'Key Features',
+    'projects.stack': 'Tech Stack',
+
     // Newsletter / Contact
     'newsletter.title': 'Let\'s build\nsomething.',
     'newsletter.text': 'I\'m looking for software engineering or web development internship opportunities in China or France. If you\'re hiring or want to collaborate, I\'d love to hear from you.',
@@ -101,6 +112,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.education': 'Formation',
     'nav.skills': 'Compétences',
     'nav.contact': 'Contact',
+    'nav.projects': 'Projets',
 
     'hero.tag': 'Disponible pour stage · Chine & France',
     'hero.intro': 'Développeur full-stack & étudiant en génie logiciel construisant des applications réelles. Fondateur d\'un club tech universitaire. Basé à Nanchong, Chine.',
@@ -164,6 +176,15 @@ const translations: Record<Language, Record<string, string>> = {
     'skills.tools': 'DevOps & Outils',
     'skills.mobile': 'Mobile',
 
+    'projects.title': 'Travaux sélectionnés.',
+    'projects.view': 'Voir les détails',
+    'projects.back': 'Retour aux projets',
+    'projects.code': 'Voir le code',
+    'projects.live': 'Démo en ligne',
+    'projects.overview': 'Aperçu',
+    'projects.features': 'Fonctionnalités clés',
+    'projects.stack': 'Technologies',
+
     'newsletter.title': 'Construisons\nquelque chose.',
     'newsletter.text': 'Je recherche des stages en ingénierie logicielle ou développement web en Chine ou en France. Si vous recrutez ou souhaitez collaborer, contactez-moi.',
     'newsletter.placeholder': 'Votre adresse email',
@@ -178,6 +199,7 @@ const translations: Record<Language, Record<string, string>> = {
     'nav.education': 'التعليم',
     'nav.skills': 'المهارات',
     'nav.contact': 'اتصل بي',
+    'nav.projects': 'المشاريع',
 
     'hero.tag': 'متاح للتدريب · الصين وفرنسا',
     'hero.intro': 'مطور ويب شامل وطالب هندسة برمجيات أبني تطبيقات حقيقية. مؤسس نادي تقني جامعي. مقيم في نانتشونغ، الصين.',
@@ -240,6 +262,15 @@ const translations: Record<Language, Record<string, string>> = {
     'skills.ai': 'الذكاء الاصطناعي / البيانات',
     'skills.tools': 'أدوات التطوير',
     'skills.mobile': 'تطوير الموبايل',
+
+    'projects.title': 'أعمال مختارة.',
+    'projects.view': 'عرض التفاصيل',
+    'projects.back': 'العودة إلى المشاريع',
+    'projects.code': 'عرض الكود',
+    'projects.live': 'عرض مباشر',
+    'projects.overview': 'نظرة عامة',
+    'projects.features': 'الميزات الرئيسية',
+    'projects.stack': 'التقنيات المستخدمة',
 
     'newsletter.title': 'لنبني\nشيئاً معاً.',
     'newsletter.text': 'أبحث عن فرص تدريب في هندسة البرمجيات أو تطوير الويب في الصين أو فرنسا. إذا كنت توظف أو تريد التعاون، يسعدني سماعك.',
