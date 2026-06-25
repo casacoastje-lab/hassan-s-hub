@@ -30,7 +30,7 @@ const Experience = () => {
     <section id="experience" className="section-padding bg-card">
       <div className="container-tight">
         <motion.div {...fadeIn} className="flex items-center gap-4 mb-4">
-          <span className="text-primary text-[0.7rem] tracking-[0.25em] uppercase">03 — {t('nav.experience')}</span>
+          <span className="text-primary text-[0.7rem] tracking-[0.25em] uppercase">04 — {t('nav.experience')}</span>
           <span className="flex-1 max-w-[80px] h-px bg-primary/40" />
         </motion.div>
         <motion.h2 {...fadeIn} className="text-[clamp(2rem,5vw,3.2rem)] font-extrabold leading-tight mb-12">

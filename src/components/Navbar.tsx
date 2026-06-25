@@ -13,7 +13,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
 
-  const navLinks = ['about', 'skills', 'experience', 'education', 'contact'];
+  const navLinks = ['about', 'skills', 'projects', 'experience', 'education', 'contact'];
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/85 backdrop-blur-2xl border-b border-primary/[0.12]">
