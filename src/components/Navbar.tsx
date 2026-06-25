@@ -6,6 +6,7 @@ const languages: { code: Language; flag: string; label: string }[] = [
   { code: 'en', flag: '🇬🇧', label: 'English' },
   { code: 'fr', flag: '🇫🇷', label: 'Français' },
   { code: 'ar', flag: '🇲🇦', label: 'العربية' },
+  { code: 'zh', flag: '🇨🇳', label: '中文' },
 ];
 
 const Navbar = () => {
