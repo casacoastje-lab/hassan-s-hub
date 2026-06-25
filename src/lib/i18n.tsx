@@ -21,7 +21,7 @@ const translations: Record<Language, Record<string, string>> = {
 
     // Hero
     'hero.tag': 'Available for internship · China & France',
-    'hero.intro': 'Full-stack developer & software engineering student building real-world applications. Founder of a university tech club. Based in Nanchong, China.',
+    'hero.intro': 'Full-stack developer & software engineering student building scalable web apps and AI-powered automation systems. Founder of a university tech club. Based in Nanchong, China.',
     'hero.cta.contact': 'Get in touch',
     'hero.cta.resume': 'Download CV',
     'hero.newsletter.title': 'Stay Updated',
@@ -38,9 +38,9 @@ const translations: Record<Language, Record<string, string>> = {
 
     // About
     'about.title': 'Building things\nthat matter.',
-    'about.text1': 'I\'m a 3rd-year Software Engineering student at China West Normal University with 4+ years of hands-on experience as a freelance full-stack developer. I turn ideas into clean, functional digital products.',
+    'about.text1': 'I\'m a Software Engineering student and full-stack developer with hands-on experience building scalable web applications, AI-powered automation systems, and SaaS products. I turn ideas into clean, functional digital products.',
     'about.text2': 'Beyond coding, I founded my university\'s first Software Engineering Club — organizing workshops, mentoring students, and fostering a culture of technical collaboration.',
-    'about.text3': 'I\'m actively seeking software engineering internships in China or France where I can contribute, grow, and build meaningful software.',
+    'about.text3': 'Proficient in React.js, Node.js, Supabase, and AI/automation tooling (n8n, prompt engineering), I\'m actively seeking an internship in software engineering or AI product development.',
     'about.stat.years': 'Years freelance development',
     'about.stat.members': 'Club members mentored',
     'about.stat.year': 'Year B.Eng Student',
@@ -51,9 +51,9 @@ const translations: Record<Language, Record<string, string>> = {
     'experience.freelance.title': 'Freelance Full-Stack Developer',
     'experience.freelance.location': 'Remote · Self-Employed',
     'experience.freelance.date': 'Jan 2021 — Present',
-    'experience.freelance.1': 'Designed and delivered 10+ production websites and web apps using HTML5, CSS3, JavaScript, and WordPress',
+    'experience.freelance.1': 'Designed and delivered 10+ production websites and web apps using React.js, Node.js, Supabase, and Tailwind CSS',
     'experience.freelance.2': 'Managed full project lifecycle independently: requirements, architecture, coding, testing, deployment',
-    'experience.freelance.3': 'Applied SEO best practices and performance optimization — improved load times and search rankings for clients',
+    'experience.freelance.3': 'Designed and deployed AI workflow automation using n8n, integrating multiple AI APIs to boost operational efficiency',
     'experience.freelance.4': 'Integrated APIs, CMS platforms, and e-commerce features into client projects',
     'experience.freelance.5': 'Maintained long-term client relationships with iterative delivery and clear communication',
     'experience.club.title': 'Founder & President — Software Engineering Club',
