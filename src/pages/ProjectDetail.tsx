@@ -19,7 +19,7 @@ const ProjectDetail = () => {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center gap-6 px-6 text-center">
         <h1 className="text-3xl font-extrabold">Project not found</h1>
-        <Link to="/#projects" className="text-primary hover:underline">
+        <Link to="/" className="text-primary hover:underline">
           ← Back to projects
         </Link>
       </div>
@@ -34,7 +34,7 @@ const ProjectDetail = () => {
 
       <div className="relative container-tight py-20 md:py-28">
         <Link
-          to="/#projects"
+          to="/"
           className="inline-flex items-center gap-2 text-[0.78rem] text-muted-foreground hover:text-primary transition-colors tracking-[0.1em] uppercase mb-12"
         >
           <ArrowLeft className="w-4 h-4" />
